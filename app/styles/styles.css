@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* Button styles */
+.btn {
+    @apply px-3 py-3 rounded-lg text-black hover:bg-purple-400 hover:text-white transition;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    @apply relative;
+  }
+  
+  .dropdown-menu {
+    @apply absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg;
+  }
+  
+  /* Dropdown items */
+  .dropdown-item {
+    @apply block px-4 py-2 hover:bg-gray-200 hover:text-purple-600 transition;
+  }
+  
