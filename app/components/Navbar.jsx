@@ -30,10 +30,12 @@ function Navbar() {
                 {/*Services dropdown*/}
                 <div
                    className='dropdown'
-                   onMouseEnter={() => setDropdown("services")}
-                   onMouseLeave={() => setDropdown(null)}
+                   //onMouseEnter={() => setDropdown("services")}
+                   //onMouseLeave={() => setDropdown(null)}
                    >
-                    <button className='btn'>
+                    <button className='btn'
+                     onClick={() => handleDropdown("services")}
+                    >
                       Services
                     </button>
                     {dropdown === "services" && (
@@ -48,10 +50,13 @@ function Navbar() {
                    {/*About us dropdown*/}
                    <div
                     className='dropdown flex-grow'
-                    onMouseEnter={() => setDropdown("about")}
-                    onMouseLeave={() => setDropdown(null)}
+                    //onMouseEnter={() => setDropdown("about")}
+                    //onMouseLeave={() => setDropdown(null)}
                    >
-                    <button className='btn'>
+                    <button 
+                      className='btn'
+                      onClick={() => handleDropdown("about")}
+                      >
                       About Us
                     </button>
                     {dropdown === "about" && (
