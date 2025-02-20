@@ -1,26 +1,24 @@
-
 /* Button styles */
 .btn {
-    @apply px-3 py-3 rounded-lg text-black hover:bg-purple-400 hover:text-white transition;
-  }
-  
-  /* Dropdown container */
-  .dropdown {
-    @apply relative;
-  }
-  
-  .dropdown-menu {
-     @apply absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg hidden;
+  @apply px-4 py-2 rounded-lg text-black hover:bg-purple-400 hover:text-white transition-all duration-300;
+}
 
-  }
+/* Dropdown container */
+.dropdown {
+  @apply relative;
+}
 
-  /* Show dropdown menu when dropdown is active */
+/* Dropdown menu */
 .dropdown-menu {
+  @apply absolute left-0 mt-6 w-48 bg-white shadow-lg rounded-lg hidden;
+}
+
+/* Show dropdown menu when active */
+.dropdown-menu.show {
   @apply block;
 }
 
-  /* Dropdown items */
-  .dropdown-item {
-    @apply block px-4 py-2 hover:bg-gray-200 hover:text-purple-600 transition;
-  }
-  
+/* Dropdown items */
+.dropdown-item {
+  @apply block px-4 py-2 text-black hover:bg-white hover:text-purple-400 transition-all duration-300;
+}
